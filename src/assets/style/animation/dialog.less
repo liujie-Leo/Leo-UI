@@ -1,0 +1,25 @@
+// 对话框出现
+.dialog-entrance{
+  animation: dialog-enter .3s;
+}
+@keyframes dialog-enter {
+  0%{
+    margin-top: -30px;
+  }
+  75%,100%{
+    margin-top: 0;
+  }
+}
+
+// 遮罩渐入
+.mask-entrance{
+  animation: mask-enter .2s;
+}
+@keyframes mask-enter {
+  0%{
+    opacity: 0;
+  }
+  75%,100%{
+    opacity: 1;
+  }
+}

@@ -1,0 +1,27 @@
+// message出现-1
+.message-entrance{
+  animation: msg-enter .2s forwards;
+}
+@keyframes msg-enter {
+  0%{
+    margin-top: 10px;
+  }
+  75%,100%{
+    margin-top: 20px;
+  }
+}
+
+// message消失
+.message-leave{
+  animation: msg-leave .2s forwards;
+}
+@keyframes msg-leave {
+  0%{
+    margin-top: 20px;
+    opacity: 1;
+  }
+  75%,100%{
+    margin-top: 10px;
+    opacity: 0;
+  }
+}
