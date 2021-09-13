@@ -48,7 +48,7 @@ const message = function (options) {
 
   // message item
   const messageDOM = document.createElement('div')
-  messageDOM.className = 'rounded-sm shadow-md px-3 py-1 mt-4  message-entrance flex items-center bg-white'
+  messageDOM.className = 'rounded-sm shadow-md px-4 py-2 mt-4  message-entrance flex items-center justify-center bg-white'
   messageDOM.id = 'l-message-wrraper'
 
   // icon DOM
