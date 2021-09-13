@@ -53,6 +53,9 @@ export default {
   mounted () {
     // 高亮渲染
     Prism.highlightAll()
+  },
+  methods: {
+    onChange () {}
   }
 }
 </script>

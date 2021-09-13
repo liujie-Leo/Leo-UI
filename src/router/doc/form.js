@@ -8,6 +8,14 @@ const route = [
     }
   },
   {
+    path: '/doc/input',
+    name: 'inputDoc',
+    component: () => import('@/views/componentsDoc/form/input/input.vue'),
+    meta: {
+      title: 'Input 输入框'
+    }
+  },
+  {
     path: '/doc/select',
     name: 'selectDoc',
     component: () => import('@/views/componentsDoc/form/select/select.vue'),

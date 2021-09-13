@@ -1,7 +1,7 @@
 <template>
   <div class="flex-1 mt-8">
     <div class="border rounded">
-      <div class="py-3 text-center text bg-gray-200 text-gray-900 doc-subtitle dark:bg-gray-900">{{ title }}</div>
+      <div class="py-3 text-center text bg-gray-200 text-gray-900 doc-subtitle">{{ title }}</div>
       <div class="py-6 px-5 ">
         <slot name="component-display" />
       </div>

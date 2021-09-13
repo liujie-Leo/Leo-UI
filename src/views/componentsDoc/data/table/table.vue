@@ -20,7 +20,7 @@
     <!-- 带斑马纹的表格 -->
     <l-component-display title="带斑马纹的表格" :code="stripeCode" language="html" description="stripe属性可以创建带斑马纹的表格。它接受一个Boolean，默认为false，设置为true即为启用。">
       <div slot="component-display">
-        <l-table :data="data" stripe align="center">
+        <l-table :data="data" stripe>
           <l-table-column label="姓名" prop="name" />
           <l-table-column label="年龄" prop="age" />
           <l-table-column label="学校" prop="school" />
@@ -30,17 +30,22 @@
     <!-- 带边框的表格 -->
     <l-component-display title="带边框的表格" :code="borderCode" language="html" description="默认情况下，Table 组件是不具有竖直方向的边框的，如果需要，可以使用border属性，它接受一个Boolean，设置为true即可启用。">
       <div slot="component-display">
-        <l-table :data="data" border align="center">
+        <l-table :data="data" border>
           <l-table-column label="姓名" prop="name" />
           <l-table-column label="年龄" prop="age" />
           <l-table-column label="学校" prop="school" />
         </l-table>
       </div>
     </l-component-display>
-    <!-- 带状态的表格 -->
-    <l-component-display v-if="false" title="带状态的表格" :code="baseUseCode" language="html" description="使用type、round属性来定义 Button 的样式。">
+    <!-- 表格对齐方式 -->
+    <l-component-display title="表格内容对其方式" :code="baseUseCode" language="html" description="l-table的默认对其方式是左对齐，你可以通过align属性设置你自己想要的对齐方式，该属性的值可以为 left/center/right">
       <div slot="component-display">
-        <l-table :data="data" align="center">
+        <div class="mb-2">
+          <l-button @click="toggleAlign('left')">Left</l-button>
+          <l-button @click="toggleAlign('center')">Center</l-button>
+          <l-button @click="toggleAlign('right')">Right</l-button>
+        </div>
+        <l-table :data="data" :align="tableAlign" border>
           <l-table-column label="姓名" prop="name" />
           <l-table-column label="年龄" prop="age" />
           <l-table-column label="学校" prop="school" />
@@ -50,7 +55,7 @@
     <!-- 固定表头 -->
     <l-component-display title="固定表头" :code="fixHeaderCode" language="html" description="只要在el-table元素中定义了height属性，即可实现固定表头的表格，而不需要额外的代码。">
       <div slot="component-display">
-        <l-table :data="dataLots" height="300" align="center">
+        <l-table :data="dataLots" height="300">
           <l-table-column label="姓名" prop="name" />
           <l-table-column label="年龄" prop="age" />
           <l-table-column label="学校" prop="school" />
@@ -85,8 +90,8 @@ export default {
         school: 'Hunan Argricature University'
       },
       data: [],
-      dataLots: []
-
+      dataLots: [],
+      tableAlign: 'center'
     }
   },
   mounted () {
@@ -102,6 +107,9 @@ export default {
       for (let j = 0; j < 10; j++) {
         this.dataLots.push(this.dataObj)
       }
+    },
+    toggleAlign (type) {
+      this.tableAlign = type
     }
   }
 }

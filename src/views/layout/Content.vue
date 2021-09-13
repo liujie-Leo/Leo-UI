@@ -1,5 +1,5 @@
 <template>
-  <div id="doc-content" class="content overflow-y-auto flex-1 flex dark:bg-gray-800">
+  <div id="doc-content" class="content overflow-y-auto flex-1 flex">
     <div class="flex-1 h-full">
       <router-view />
     </div>
