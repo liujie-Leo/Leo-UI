@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # leo-ui
 
 ## Project setup
@@ -22,3 +23,6 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+=======
+#ui
+>>>>>>> 3acd27d9d9a70cb454216b6794d00d88bff1d34c
