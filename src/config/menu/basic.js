@@ -1,12 +1,11 @@
-const route = [
+export default [
   {
-    path: '/doc/button',
+    title: 'Button 按钮',
     name: 'buttonDoc',
     component: () => import('@/views/componentsDoc/base/button/button.vue'),
+    path: '/doc/button',
     meta: {
       title: 'Button 按钮'
     }
   }
 ]
-
-export default route

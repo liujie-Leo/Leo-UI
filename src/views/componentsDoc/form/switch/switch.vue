@@ -21,7 +21,7 @@
 import Prism from 'prismjs'
 import buttonTypeCode from './code/baseUse'
 import registerCode from './code/register'
-import LSwitch from 'components/Switch/switch.vue'
+import LSwitch from 'components/form/Switch/switch.vue'
 export default {
   components: { LSwitch },
   data () {

@@ -48,7 +48,7 @@ import baseUseCode from './code/baseUse'
 import disabledCode from './code/disabled'
 import clearableCode from './code/clearable'
 import passwordCode from './code/password'
-import LInput from 'components/Input/input.vue'
+import LInput from 'components/form/Input/input.vue'
 export default {
   components: { LInput },
   data () {

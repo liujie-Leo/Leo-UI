@@ -1,13 +1,16 @@
-const route = [
+export default [
   {
-    path: '/doc/calendar',
+    title: 'Calendar 日历',
     name: 'calendarDoc',
-    component: () => import('@/views/componentsDoc/other/calendar/calendar.vue'),
+    path: '/doc/calendar',
+    component: () =>
+      import('@/views/componentsDoc/other/calendar/calendar.vue'),
     meta: {
       title: 'Calendar 日历'
     }
   },
   {
+    title: 'Dialog 对话框',
     path: '/doc/dialog',
     name: 'dialogDoc',
     component: () => import('@/views/componentsDoc/other/dialog/dialog.vue'),
@@ -16,6 +19,7 @@ const route = [
     }
   },
   {
+    title: 'Swiper 轮播图',
     path: '/doc/swiper',
     name: 'swiperDoc',
     component: () => import('@/views/componentsDoc/other/swiper/swiper.vue'),
@@ -24,4 +28,3 @@ const route = [
     }
   }
 ]
-export default route

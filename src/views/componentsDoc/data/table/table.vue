@@ -72,8 +72,8 @@ import registerCode from './code/register'
 import borderCode from './code/border'
 import fixHeaderCode from './code/fix-header'
 import customDurationCode from './code/customDuration'
-import LTable from 'components/Table/table'
-import LTableColumn from 'components/Table/tableColumn'
+import LTable from 'components/data/Table/table'
+import LTableColumn from 'components/data/Table/tableColumn'
 export default {
   components: { LTable, LTableColumn },
   data () {

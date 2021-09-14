@@ -4,7 +4,7 @@ import router from './router'
 import store from './store'
 import 'tailwindcss/tailwind.css'
 import '@/assets/style/index.less' // 全局样式
-import $message from 'components/Message/message'
+import $message from 'components/notification/Message/message'
 import 'utils/registerPlugins' // 注册全局插件
 import 'utils/registerComponent' // 注册全局组件
 import i18n from './i18n'

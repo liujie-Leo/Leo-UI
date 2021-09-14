@@ -24,7 +24,7 @@
   </div>
 </template>
 <script>
-import Picker from 'components/Picker/picker'
+import Picker from 'components/form/Picker/picker'
 import Bus from 'utils/eventBus'
 export default {
   components: { Picker },

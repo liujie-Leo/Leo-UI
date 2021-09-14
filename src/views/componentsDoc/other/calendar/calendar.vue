@@ -29,8 +29,8 @@
 import Prism from 'prismjs'
 import buttonTypeCode from './code/baseUse'
 import registerCode from './code/register'
-import LCalendar from 'components/Calendar/calendar.vue'
-import LCalendarFull from 'components/Calendar/calendarFull.vue'
+import LCalendar from 'components/other/Calendar/calendar.vue'
+import LCalendarFull from 'components/other/Calendar/calendarFull.vue'
 export default {
   components: { LCalendar, LCalendarFull },
   data () {

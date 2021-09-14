@@ -26,8 +26,8 @@ import Prism from 'prismjs'
 import registerCode from './code/register'
 import baseUseCode from './code/baseUse'
 import disabledCode from './code/disabled'
-import LSelect from 'components/Select/select.vue'
-import LOption from 'components/Select/option.vue'
+import LSelect from 'components/form/Select/select.vue'
+import LOption from 'components/form/Select/option.vue'
 export default {
   components: { LSelect, LOption },
   data () {

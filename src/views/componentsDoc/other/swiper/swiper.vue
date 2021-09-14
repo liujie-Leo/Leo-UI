@@ -63,8 +63,8 @@ import buttonTypeCode from './code/baseUse'
 import registerCode from './code/register'
 import toggleArrowCode from './code/toggleArrow'
 import toggleIndicatorCode from './code/toggleIndicator'
-import LSwiper from 'components/Swiper/swiper.vue'
-import LSwiperItem from 'components/Swiper/swiperItem.vue'
+import LSwiper from 'components/other/Swiper/swiper.vue'
+import LSwiperItem from 'components/other/Swiper/swiperItem.vue'
 export default {
   components: { LSwiper, LSwiperItem },
   data () {

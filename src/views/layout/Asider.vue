@@ -14,7 +14,7 @@
   </div>
 </template>
 <script>
-import menus from 'config/menus'
+import menus from 'config/menu/index.js'
 export default {
   data () {
     return {

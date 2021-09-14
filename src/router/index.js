@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 // doc router
-import docRoutes from './doc'
+import docRoutes from './docRoutes'
 
 import { scrollTop, computeTop } from 'utils/common'
 

@@ -31,8 +31,8 @@
 </template>
 <script>
 import { computeDate } from 'utils/date.js'
-import LSelect from 'components/Select/select'
-import LOption from 'components/Select/option'
+import LSelect from 'components/form/Select/select'
+import LOption from 'components/form/Select/option'
 export default {
   components: { LSelect, LOption },
   data () {

@@ -1,9 +1,9 @@
 <template>
   <div :class="['l-button','p-12 pt-4']">
-    <l-title>Radio单选框</l-title>
-    <l-parag>单选框</l-parag>
+    <l-title>InputNumber 计数器</l-title>
+    <l-parag>仅允许输入标准的数字值，可定义范围</l-parag>
     <l-title>何时使用</l-title>
-    <l-parag>用于在多个备选项中选中单个状态。</l-parag>
+    <l-parag>需要用户输入具有范围或标准的数字值类型时使用。</l-parag>
     <l-title>组件注册</l-title>
     <l-code language="js" :code="registerCode" />
     <l-title>代码演示</l-title>
@@ -11,23 +11,23 @@
     <l-component-display title="基本用法" :code="baseUseCode" language="html" description="最简单的用法。">
       <div slot="component-display">
         <div>
-          <l-radio-group v-model="value" @change="onChange">
-            <l-radio label="辣椒炒肉" value="ljcr" />
-            <l-radio label="虾滑蒸蛋" value="xhzd" />
-            <l-radio label="红烧排骨" value="hspg" />
-          </l-radio-group>
+          <l-input-number v-model="baseUseValue" />
         </div>
       </div>
     </l-component-display>
-    <!-- 禁用 -->
-    <l-component-display title="禁用状态" :code="disabledCode" language="html" description="你可以在 l-radio-group 组件中添加 disabled 属性来设置禁用状态。">
+    <!-- 禁用状态 -->
+    <l-component-display title="禁用状态" :code="disabledCode" language="html" description="最简单的用法。">
       <div slot="component-display">
         <div>
-          <l-radio-group v-model="value" disabled @change="onChange">
-            <l-radio label="辣椒炒肉" value="ljcr" />
-            <l-radio label="虾滑蒸蛋" value="xhzd" />
-            <l-radio label="红烧排骨" value="hspg" />
-          </l-radio-group>
+          <l-input-number v-model="disabledValue" disabled />
+        </div>
+      </div>
+    </l-component-display>
+    <!-- 步数 -->
+    <l-component-display title="步数" :code="stepCode" language="html" description="最简单的用法。">
+      <div slot="component-display">
+        <div>
+          <l-input-number v-model="stepValue" :step="2" />
         </div>
       </div>
     </l-component-display>
@@ -38,24 +38,24 @@ import Prism from 'prismjs'
 import registerCode from './code/register'
 import baseUseCode from './code/baseUse'
 import disabledCode from './code/disabled'
-import LRadio from 'components/form/Radio/radio.vue'
-import LRadioGroup from 'components/form/Radio/radioGroup.vue'
+import stepCode from './code/step'
+import LInputNumber from 'components/form/InputNumber/InputNumber.vue'
 export default {
-  components: { LRadio, LRadioGroup },
+  components: { LInputNumber },
   data () {
     return {
-      baseUseCode,
       registerCode,
+      baseUseCode,
       disabledCode,
-      value: false
+      stepCode,
+      baseUseValue: 0,
+      disabledValue: 0,
+      stepValue: 0
     }
   },
   mounted () {
     // 高亮渲染
     Prism.highlightAll()
-  },
-  methods: {
-    onChange () {}
   }
 }
 </script>

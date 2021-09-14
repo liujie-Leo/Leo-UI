@@ -28,7 +28,7 @@
 import Prism from 'prismjs'
 import baseCode from './code/baseUse'
 import registerCode from './code/register'
-import LDialog from 'components/Dialog/dialog.vue'
+import LDialog from 'components/other/Dialog/dialog.vue'
 export default {
   components: { LDialog },
   data () {
