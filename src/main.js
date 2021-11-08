@@ -12,6 +12,8 @@ Vue.config.productionTip = false
 // message组件挂载到Vue构造函数上
 Vue.prototype.$message = $message
 
+console.log(process.env.NODE_ENV)
+
 new Vue({
   router,
   store,

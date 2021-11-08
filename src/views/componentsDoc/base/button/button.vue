@@ -82,27 +82,9 @@ export default {
   mounted () {
     // 高亮渲染
     Prism.highlightAll()
-    // 计算top
-    this.computeTop()
   },
   methods: {
-    computeTop () {
-      const menus = []
-      const titleDOMs = document.getElementsByClassName('doc-title')
-      titleDOMs.forEach(item => {
-        menus.push(
-          {
-            level: 1,
-            title: item.textContent,
-            children: []
-          })
-      })
-      const subTitleDOMs = document.getElementsByClassName('doc-subtitle')
-      subTitleDOMs.forEach(item => {
-        menus[menus.length - 1].children.push({ level: 2, title: item.textContent })
-      })
-      return menus
-    }
+
   }
 }
 </script>

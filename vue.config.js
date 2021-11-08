@@ -1,4 +1,5 @@
 const path = require('path')
+const sourceMap = process.env.NODE_ENV != 'production'
 module.exports = {
   outputDir: 'dist-ui',
   configureWebpack: {
@@ -11,7 +12,8 @@ module.exports = {
         config: path.resolve(__dirname, './src/config'),
         utils: path.resolve(__dirname, './src/utils')
       }
-    }
+    },
+    devtool: 'inline-source-map'
   },
-  productionSourceMap: false
+  productionSourceMap: sourceMap
 }

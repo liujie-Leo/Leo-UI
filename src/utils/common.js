@@ -39,6 +39,8 @@ export const scrollTop = function (top = 0, behavior = 'instant', domId = 'doc-c
 export const computeTop = function () {
   const menus = []
   const titleDOMs = document.getElementsByClassName('doc-title')
+  console.log(titleDOMs)
+
   titleDOMs.forEach(item => {
     const top = item.offsetTop - 64
     menus.push(
