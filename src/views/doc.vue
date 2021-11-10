@@ -15,7 +15,6 @@ export default {
   components: { Header, Asider, Content },
   data () {
     return {
-
     }
   }
 }
