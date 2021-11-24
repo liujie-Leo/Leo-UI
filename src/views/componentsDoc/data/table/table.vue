@@ -81,7 +81,7 @@ export default {
       baseUseCode: baseUseCode,
       registerCode,
       stripeCode,
-      borderCode,
+      borderCode, //
       fixHeaderCode,
       customDurationCode,
       dataObj: {
