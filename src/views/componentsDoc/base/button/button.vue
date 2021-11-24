@@ -1,7 +1,7 @@
 <template>
   <div id="button-doc" :class="['l-button','p-12 pt-4']">
     <l-title>Button按钮</l-title>
-    <l-parag>按钮用于开始一个即时操作。</l-parag>
+    <l-parag>按钮用于开始一个即时操作sss。</l-parag>
     <l-title>何时使用</l-title>
     <l-parag>标记了一个（或封装一组）操作命令，响应用户点击行为，触发相应的业务逻辑。</l-parag>
     <l-title>组件注册</l-title>
