@@ -5,10 +5,11 @@
 </template>
 
 <script>
-console.log('########################')
-const dom = window.parent.document.getElementById('test')
-console.log(dom)
-console.log('@@@@@@@@@@@@@@@@@@@@@@@@')
+console.log('####################')
+window.addEventListener('message', function (e) {
+  console.log('####父级监听到了iframe的事件')
+  console.log(e)
+})
 </script>
 
 <style>
