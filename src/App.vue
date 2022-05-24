@@ -6,7 +6,7 @@
 
 <script>
 console.log('########################')
-const dom = document.getElementById('test')
+const dom = window.parent.document.getElementById('test')
 console.log(dom)
 console.log('@@@@@@@@@@@@@@@@@@@@@@@@')
 </script>
