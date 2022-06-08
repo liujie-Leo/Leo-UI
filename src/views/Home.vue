@@ -5,7 +5,6 @@
       <div class="mt-3">
         <div class="px-4 py-1 bg-gray-100  rounded inline-block cursor-pointer  text-blue-500 mr-2 transition hover:shadow" @click="getStarted">Document</div>
         <div class="px-4 py-1 bg-blue-500 rounded inline-block cursor-pointer text-white  transition hover:shadow" @click="getStarted">Get started</div>
-        <div class="px-4 py-1 bg-blue-500 rounded inline-block cursor-pointer text-white  transition hover:shadow" @click="test">Test</div>
       </div>
     </div>
   </div>
